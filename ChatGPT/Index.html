@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is ChatGPT? A Simple Guide for Beginners</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description"
+        content="ChatGPT is an AI chatbot that can write, answer questions, and help with daily tasks. Here's everything a beginner needs to know about ChatGPT.">
+    <meta name="keywords"
+        content="what is ChatGPT, ChatGPT for beginners, ChatGPT guide, AI chatbot, how to use ChatGPT">
+    <meta name="author" content="Rahul Parmar">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="What is ChatGPT? A Simple Guide for Beginners">
+    <meta property="og:description"
+        content="ChatGPT is an AI chatbot that can write, answer questions, and help with daily tasks. Here's everything a beginner needs to know.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="YOUR-PAGE-URL-HERE">
+    <meta property="og:image" content="YOUR-THUMBNAIL-URL-HERE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What is ChatGPT? A Simple Guide for Beginners">
+    <meta name="twitter:description"
+        content="New to AI? Here's a simple, beginner-friendly guide to understanding ChatGPT and how it can help you.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #faf8f4;
+            --ink: #1a1814;
+            --ink-light: #4a4640;
+            --ink-muted: #8a8680;
+            --accent: #c8440a;
+            --accent-warm: #e8853a;
+            --highlight: #fff3e0;
+            --rule: #e0dbd2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--ink);
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .masthead {
+            border-bottom: 3px double var(--rule);
+            padding: 28px 0 20px;
+            text-align: center;
+        }
+
+        .masthead .label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .masthead .site-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: var(--ink-muted);
+            margin-top: 4px;
+        }
+
+        .hero {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 64px 24px 48px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            line-height: 1.15;
+            color: var(--ink);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .hero .deck {
+            font-size: 1.1rem;
+            font-weight: 300;
+            font-style: italic;
+            color: var(--ink-light);
+            border-left: 3px solid var(--accent-warm);
+            padding-left: 20px;
+            margin-bottom: 32px;
+        }
+
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .byline strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .byline .dot {
+            color: var(--rule);
+        }
+
+        .article-body {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .article-body p {
+            margin-bottom: 1.6rem;
+            font-weight: 300;
+            color: var(--ink-light);
+        }
+
+        .article-body p:first-of-type {
+            font-size: 1.1rem;
+            color: var(--ink);
+            font-weight: 400;
+        }
+
+        .article-body p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            float: left;
+            line-height: 0.85;
+            margin-right: 8px;
+            margin-top: 8px;
+            color: var(--accent);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin: 48px 0 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        ul {
+            margin: 16px 0 24px 0;
+            padding-left: 24px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: var(--ink-light);
+            font-weight: 300;
+        }
+
+        ul li strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: var(--highlight);
+            border-left: 4px solid var(--accent-warm);
+            padding: 24px 28px;
+            margin: 36px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight-box .box-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        .article-footer {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            border-top: 3px double var(--rule);
+            text-align: center;
+        }
+
+        .article-footer .plan-badge {
+            display: inline-block;
+            background: var(--ink);
+            color: #fff;
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            margin-bottom: 16px;
+        }
+
+        .article-footer .author-note {
+            font-size: 0.85rem;
+            color: var(--ink-muted);
+            font-style: italic;
+        }
+
+        .article-footer .author-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-top: 8px;
+        }
+
+        .article-footer .copyright {
+            font-size: 0.75rem;
+            color: var(--ink-muted);
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .byline {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="masthead">
+        <div class="label">AI & Technology</div>
+        <div class="site-name">The Tech Brief · by Rahul Parmar</div>
+    </header>
+
+    <article>
+        <div class="hero">
+            <span class="category-tag">Beginner Guide</span>
+            <h1>What is ChatGPT? <em>A Simple Guide for Beginners</em></h1>
+            <p class="deck">You've probably heard the name everywhere — at work, in the news, from friends. But what
+                exactly is ChatGPT, and why is everyone talking about it?</p>
+            <div class="byline">
+                <span>By <strong>Rahul Parmar</strong></span>
+                <span class="dot">·</span>
+                <span>AI & Technology</span>
+                <span class="dot">·</span>
+                <span>3 min read</span>
+            </div>
+        </div>
+
+        <div class="article-body">
+
+            <p>ChatGPT is one of the most talked-about tools on the internet right now — and for good reason. It's an
+                AI-powered chatbot that can hold a conversation, answer questions, write content, and help you get
+                things done faster than ever before. If you've been wondering what ChatGPT actually is and whether it's
+                something you should be using, this guide will give you a clear, simple answer.</p>
+
+            <h2>So, What Exactly is ChatGPT?</h2>
+
+            <p>ChatGPT is an artificial intelligence chatbot created by a company called OpenAI. The name stands for
+                "Chat Generative Pre-trained Transformer" — but you don't need to remember that. What matters is what it
+                does: you type a question or a request, and ChatGPT responds in natural, human-like language.</p>
+
+            <p>Think of it like texting a very knowledgeable friend who has read millions of books, articles, and
+                websites. Unlike a basic Google search that gives you a list of links, ChatGPT gives you a direct,
+                conversational answer — instantly.</p>
+
+            <div class="highlight-box">
+                <div class="box-label">In Simple Terms</div>
+                <p>ChatGPT is an AI chatbot you can have a real conversation with. You ask, it answers — clearly,
+                    quickly, and in plain English.</p>
+            </div>
+
+            <h2>What Can ChatGPT Do?</h2>
+
+            <p>ChatGPT is surprisingly versatile. Here are some of the most common things people use it for every day:
+            </p>
+
+            <ul>
+                <li><strong>Answer questions</strong> — from simple facts to complex explanations</li>
+                <li><strong>Write content</strong> — emails, blog posts, captions, essays, and more</li>
+                <li><strong>Summarize text</strong> — paste a long article and get a short summary instantly</li>
+                <li><strong>Help with coding</strong> — write, debug, or explain code in any language</li>
+                <li><strong>Brainstorm ideas</strong> — need business name ideas or blog topics? Just ask</li>
+                <li><strong>Translate languages</strong> — communicate across language barriers easily</li>
+            </ul>
+
+            <p>The best part? You don't need any technical skills to use it. If you can type a message, you can use
+                ChatGPT.</p>
+
+            <h2>Who is ChatGPT For?</h2>
+
+            <p>ChatGPT is for everyone — and that's not an exaggeration. Students use it to understand difficult
+                concepts and get help with assignments. Professionals use it to draft emails, reports, and presentations
+                in minutes. Entrepreneurs use it to brainstorm, plan, and create content for their businesses. Even
+                developers use it daily to write and review code faster.</p>
+
+            <p>Whether you're a complete beginner with no tech background or a seasoned professional, ChatGPT has
+                something useful to offer. It's one of those rare tools that genuinely works for anyone.</p>
+
+            <h2>How Do You Get Started?</h2>
+
+            <p>Getting started with ChatGPT takes less than two minutes. Here's all you need to do:</p>
+
+            <ul>
+                <li>Go to <strong>chat.openai.com</strong></li>
+                <li>Click <strong>"Sign Up"</strong> and create a free account</li>
+                <li>Type your first message in the chat box</li>
+                <li>Hit Enter and watch ChatGPT respond instantly</li>
+            </ul>
+
+            <p>The free version of ChatGPT is more than enough to get started. There's also a paid version called
+                ChatGPT Plus which gives you access to faster responses and more advanced features — but for beginners,
+                the free tier works perfectly.</p>
+
+            <h2>Final Thoughts</h2>
+
+            <p>ChatGPT is not just a trend — it's a tool that's genuinely changing the way people work, learn, and
+                create. Now that you know what ChatGPT is and what it can do, the best next step is to simply try it
+                yourself. Open a chat, ask it something you're curious about, and see what happens. You might be
+                surprised at how useful it turns out to be.</p>
+
+        </div>
+    </article>
+
+    <footer class="article-footer">
+        <div class="plan-badge">✦ Basic Plan Sample — 600 Words</div>
+        <div class="author-note">Written as a portfolio sample · AI & Technology · 2026</div>
+        <div class="author-name">Rahul Parmar — Content & SEO Writer</div>
+        <div class="copyright">© 2026 Rahul Parmar. All rights reserved. Unauthorized reproduction is prohibited.</div>
+    </footer>
+
+</body>
+
+</html>
